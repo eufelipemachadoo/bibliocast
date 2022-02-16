@@ -1,0 +1,97 @@
+:root{ /*Cria uma variável chama root*/
+    --vermelho: #e50914; /*valor que a variável root pode assumir*/
+    --preto: #141414; /*valor que a variável root pode assumir*/
+}
+*{ /*Define que TODAS as Tags devem assumir os seguintes valores*/
+    padding: 0px; /*A distancia entre um elemento e outro (Todos) deve ser 0px*/
+    margin: 0px; /*Todas as magens da página deve assumir 0px;*/
+    box-sizing: border-box; /*Define que todas os elementos devem ter bordar fixas, impedindo que o tamanho da borda aumente de acordo com a inserção de dados*/
+} /*Esse elemento é utilizado para "Resetar" toda a página*/
+
+body{ /*Indica que o "Corpo da página deve assumir os seguintes valores*/
+    background: var(--preto); /*Cor definida de acordo com a variável root*/
+    font-family: 'Times New Roman', Times, serif; /*Todas as fontes do copor deve ser desse tipo*/
+    color: white;
+}
+
+header .container{ /*Acessa a div container dentro do header*/
+    display: flex;
+    flex-direction: row; 
+    align-items: center; /*Alinha os itens ao centro da linha*/
+    justify-content: space-between; /*Cria um espaço entre a primeira Tag filha do h2 e o restante dos elementos.*/
+    
+}
+
+header .logo{ /*Acessa a classe "logo" dentro de "header"*/
+    color: var(--vermelho); /*Define que a cor deve ser a indicada de acordo com a variável*/
+    font-family: "Arial Black", Times; /*A fonte deve ser desse tipo*/
+    font-size: 30px; /*O tamanho da fonte de ver esse*/
+    
+}
+
+header nav a{ /*Acessa todos os elementos "a" dentro de "nav" que está dentro de "header"*/
+    text-decoration: none; /*Define que os link não deve ter nenhum efeito gráfico de "link"*/
+    color: #AAA; /*Defina a cor das paralabras digitadas no elemento*/
+    margin-right: 10px; /*Define que entre um espaçamento entre um elemento e outro*/
+}
+
+header nav a:hover{/*Quando o curso passar por cima do elemento*/ 
+    color: #fff; /*A cor da fonte deve ser*/
+}
+
+.corte-principal{
+    font-size: 16px; /*Define o tamanho da fonte*/
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-house.jpg'); /*define o caminho da imagem utilizada como background* com um "degrade" no tom da imagem para melhor visualizar as letras*/
+    height: 400px; /*Define o tamanho da altura da div*/
+    background-size: cover; 
+    display: flex;  /*Joga os elementos por padrão em linha*/
+    flex-direction: column; /*Por padrão o comando Display: Flex habilita a direção em linha, aqui foi setado para coluna*/
+    justify-content: center; /*Justify-content por padrão segue a direção da flex-direction. Esse comando alinha ao meio da "Coluna"*/ 
+    align-items: flex-start; /*O elemente sempre são iniciados a ESQUERDA"*/
+
+}
+
+.corte-principal .descricao{ /*acessa as classes corte-principal e descricao*/
+    margin-bottom: 90px; /*define uma margem de 90 pixels de margim abaixo do elemento*/
+    margin-top: 10px;
+}
+
+.titulo{ /*acessa a classe titulo*/
+    margin-top: 20px;
+    font-size: 40px; /*Define o tamanho da fonte em 40px*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{ /*acessa o elemento botão*/
+    background-color: rgba(0,0,0,.50); /*Define a cor do background para 0 em rgba e 50% de alfa*/
+    border: none; /*Tira a borda dos botões*/
+    color: white; /*Define a cor da letra para branco*/
+    padding: 15px 30px; /*Espaçamento entre os elementos, 15px em cima e abaixo e 30px a direita e esquerda*/ 
+    margin-right: 15px; /*Margem da direita*/
+    cursor: pointer; /*Quando a pessoa passar o mouse no botão o ponteiro muda de simbolo. */
+    transition: 250ms ease-in-out; /*Haverá uma transição que irá durar 250 milisegundos para ser concluida*/
+}
+
+.botao:hover{ /*Ao passar o cursor acima do botão o botão irá alterar de aparencia*/
+    background-color: white; /*O fundo ficará branco*/
+    color: black; /*A fonte ficará preto*/
+}
+
+
+.botao i{
+    margin-right: 8px; /*Espaçamento entre o ícone e o texto "Assistir Agora"*/
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.corte-principal .container{
+    width: 50%;
+}
+
+.box-corte{
+    height: 100%;
+    width: 100%;
+    display: block;
+}

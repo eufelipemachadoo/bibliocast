@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!--Indica ao navegador qual tipo de documento será apresentado-->
+<html lang="pt-br"> <!--Cria o dumento e define em qual linguagem o navegador deve interpretar a página-->
+
+<head> <!--Define os meta dados a ser utilizado-->
+    <meta charset="UTF-8"> <!--Usado para que o navegador reconheça caracters especiais PT-BR (Ascentuação Gráfica, Ç)-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Define a compatibilidade do navegador-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css"> <!--Exporta um css externo-->
+    <link rel="stylesheet" href="estilo/owl/owl.carousel.min.css"> <!--Importando o arquivo owl.carousel da pasta de estilo-->
+    <link rel="stylesheet" href="estilo/owl/owl.theme.default.css"> <!--Importando o arquivo owl.carousel default da pasta de estilo-->
+    
+    
+    <title>Galeria Cast</title> <!--Titulo da página-->
+</head>
+
+
+<body> <!--Define o "Corpo da página, os dados da página devem ser inseridos aqui"-->
+    <header> <!--Funciona como o cabeçalho da página-->
+        <div class="container"> <!--Define uma classe chamada "Container"-->
+            <h2 class="logo">BIBLIOCAST</h2> <!--Cria um título com p/ página-->
+                <nav> <!--Cria uma barra de navegação-->
+                    <a href="#">Início</a> <!--Cria um link para ser direcionado ao clicar-->
+                    <a href="#">Finanças</a> <!--Cria um link para ser direcionado ao clicar-->
+                    <a href="#">Marketing Digital</a> <!--Cria um link para ser direcionado ao clicar-->
+                    <a href="#">Espaço</a> <!--Cria um link para ser direcionado ao clicar-->
+                    <a href="#">Política</a> <!--Cria um link para ser direcionado ao clicar-->
+                </nav><!--Fecha a barra de navegação-->
+        </div> <!--Fecha a tag "Container"-->
+    </header> <!--Fecha a Tag do "Cabeçalho"-->
+
+    <main><!--Define uma classe "Principal", essa nomenclatura não faz diferença para quem desenvolve, porém é bom para raquear a página com SEO-->
+        <div class="corte-principal"> <!--Define uma classe-->
+            <div class="container"> <!--Define a classe conteiner novamente-->
+                <h3 class="titulo">Star Wars</h3> <!--Define o titulo Star Wars-->
+                <p class="descricao">Nada pode impedir o político sem escrúpulos Frank Underwood de conquistar Washington. Assista agora a nova temporada de House of Cards que está imperdível.</p> <!--Define um paragrafo com o texto-->
+                <div class="botoes">
+                    <button role="button" class="botao"> <!--Cria um botão com a chamada "Assistir"-->
+                        <i class="fa-solid fa-play"></i> <!--Link de incone fornecido do font-awesome-->
+                         ASSISTIR AGORA
+                    </button> 
+                    <button role="button" class="botao"> <!--Cria um botão com a chamada "Assistir"-->
+                        <i class="fa-solid fa-circle-info"></i> <!--Link de incone fornecido do font-awesome--> 
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>    <!--fecha a classe container-->
+
+
+            </div>
+        </div>
+
+    </main> <!--Fecha o main-->
+
+
+    <div class="carrossel">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-corte" src="img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-corte" src="img/mini2.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-corte" src="img/mini3.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-corte" src="img/mini4.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-corte" src="img/mini5.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-corte" src="img/mini6.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-corte" src="img/mini7.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-corte" src="img/mini8.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-corte" src="img/mini9.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-corte" src="img/mini10.jpg" alt="" srcset="">
+            </div>
+
+        </div>
+
+
+
+    </div>
+    
+    
+    <script src="https://kit.fontawesome.com/f7aab3ced0.js" crossorigin="anonymous"></script> <!--Importa um script de uma página externa-->
+    <script src="js/owl/jquery.min.js"></script> <!--Importando o jquaryda pasta js/owl-->
+    <script src="js/owl/owl.carousel.min.js"></script> <!--Importando o jquaryda pasta js/owl-->
+    <script src="js/main.js"></script>
+</body> <!--Fecha a Tag usada para criar o corpo-->
+
+
+</html> <!--Fecha a Tag-->
